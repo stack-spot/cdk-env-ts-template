@@ -7,3 +7,5 @@ class {{ computed_inputs.app_class_name }}Stack extends Stack {
 
   }
 }
+export default {{ computed_inputs.app_class_name }}Stack;
+
