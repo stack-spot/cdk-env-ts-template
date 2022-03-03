@@ -1,0 +1,14 @@
+name: cdk-env-ts-template
+description: Template to create your own Stack.
+types:
+  - env-template
+inputs:
+  - label: "Application name (e.g. my-awesome-app):"
+    type: text
+    name: project_name
+  - label: "Application version (e.g. 1.0.0):"
+    type: text
+    name: project_version
+computedInputs:
+  app_class_name: "{{ inputs.project_name|replace('_', '-')|replace(' ', '-')|title|replace('-', '') }}"
+  project_name: "{{ inputs.project_name|replace('_', '-')|replace(' ', '-')|lower }}"
