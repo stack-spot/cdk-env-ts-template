@@ -1,6 +1,7 @@
 name: cdk-env-ts-template
 description: Template to create your own Stack.
 types:
+  - app-template
   - env-template
 inputs:
   - label: "Application name (e.g. my-awesome-app):"
