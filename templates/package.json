@@ -7,6 +7,9 @@
   "scripts": {
     "build": "tsc",
     "cdk": "cdk",
+    "cdk:diff": "cdk diff",
+    "cdk:deploy": "cdk deploy --require-approval never --progress events",
+    "cdk:synth": "cdk synth",
     "lint": "eslint --ext=ts .",
     "test": "jest",
     "watch": "tsc -w"
